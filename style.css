@@ -1,0 +1,53 @@
+body{
+    background-color: gray;
+}
+#circle{
+    border-style: solid;
+    border-color:grey;
+    background-color: black;
+    height: 300px;
+    box-shadow:wheat 5px 5px 5px;
+    width:300px;
+    border-radius:50%;
+    margin-top: 14.5%;
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#circle span{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    transform: rotate(calc(30deg * var(--i)));
+    inset:220px;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 19px;
+}
+#circle span b{
+    transform:rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+#circle::before{
+    content:'';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
+.hand{
+    position:absolute;
+    display:flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+.hand i{
+    position: absolute;
+    background-color:var(--clr);
+    width:4px;
+    height:var(--h);
+    border-radius:8px;
+}
+
